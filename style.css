@@ -1,0 +1,133 @@
+:root {
+  --bg-color: #f1f5f9;
+  --surface: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --accent-blue: #2563eb;
+  --danger-bg: #fef2f2;
+  --danger-text: #991b1b;
+  --success-bg: #f0fdf4;
+  --success-text: #166534;
+  --border: #e2e8f0;
+}
+
+* {
+  box-init: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-logo span {
+  color: var(--accent-blue);
+}
+
+.nav-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+}
+
+/* Showcase Grid Layout */
+.showcase-section {
+  padding: 3rem 0;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card-header.bad {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  border-bottom: 1px solid #fecaca;
+}
+
+.card-header.good {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border-bottom: 1px solid #bbf7d0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-body p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 1.25rem;
+}
+
+.error-list, .success-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.error-list { color: var(--danger-text); }
+.success-list { color: var(--success-text); }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}
