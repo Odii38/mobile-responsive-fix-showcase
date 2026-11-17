@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Responsive Fix Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fixed Mobile-Friendly Navbar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">Pixel<span>Clean</span></a>
+      <div class="nav-badge">✓ Mobile Overflow Fixed</div>
+    </div>
+  </header>
+
+  <!-- Showcase Section -->
+  <main class="showcase-section">
+    <div class="nav-container">
+      <div class="showcase-grid">
+        
+        <!-- Left: The Problem -->
+        <div class="card problem-card">
+          <div class="card-header bad">Before: Broken Mobile Layout</div>
+          <div class="card-body">
+            <h3>Text overlapping & horizontal scroll</h3>
+            <p>Elements breaking out of screen boundaries on small mobile devices due to fixed widths and unconstrained padding.</p>
+            <ul class="error-list">
+              <li>❌ Horizontal overflow on iPhone / Android</li>
+              <li>❌ Navigation links squished or pushing off-screen</li>
+              <li>❌ Fixed pixel widths breaking fluid viewports</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: The Solution -->
+        <div class="card solution-card">
+          <div class="card-header good">After: Clean Responsive Code</div>
+          <div class="card-body">
+            <h3>Fluid Flexbox & relative units</h3>
+            <p>Refactored using modern CSS Flexbox, max-widths, and media queries to ensure 100% fluid scaling on any screen size.</p>
+            <ul class="success-list">
+              <li>✓ Zero horizontal scrolling on mobile</li>
+              <li>✓ Flexible containers & responsive typography</li>
+              <li>✓ Clean, semantic HTML5 structure</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
